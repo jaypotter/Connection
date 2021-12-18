@@ -1,2 +1,2 @@
 # Connection
-PHP 8 Remote and Local Connection Management
+PHP 8 Connection Management
