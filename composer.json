@@ -1,0 +1,19 @@
+{
+    "name": "potter/connection",
+    "description": "PHP 8 Connection Management",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jay Potter",
+            "email": "jay@jaypotter.ca"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Potter\\": "Potter/"}
+    },
+    "require": {
+        "php": "^8.0"
+    }
+}
