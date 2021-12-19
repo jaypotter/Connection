@@ -8,5 +8,7 @@ interface ConnectionInterface
 
     public function getHost(): string;
 
+    public function getPrefix(): string;
+
     public function setHost(string $host): void;
 }
