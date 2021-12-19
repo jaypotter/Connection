@@ -6,5 +6,5 @@ use Potter\Connection\ConnectionInterface;
 
 interface LocalConnectionInterface extends ConnectionInterface
 {
-    const LOCALHOST = 'localhost';
+    public const LOCALHOST = 'localhost';
 }

@@ -6,8 +6,23 @@ use Potter\Connection\AbstractConnection;
 
 abstract class AbstractLocalConnection extends AbstractConnection implements LocalConnectionInterface
 {
+    private const PREFIX = 'local';
+
     final public function getHost(): string
     {
         return self::LOCALHOST;
+    }
+
+    public function getPrefix(): string
+    {
+        return self::PREFIX;
+    }
+
+    final public function setHost(string $host): void
+    {
+        if (strcasecmp($host, self::LOCALHOST) == 0) {
+            return;
+        }
+        throw new LocalHostnameException;
     }
 }
