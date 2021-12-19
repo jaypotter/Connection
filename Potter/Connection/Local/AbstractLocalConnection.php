@@ -10,4 +10,12 @@ abstract class AbstractLocalConnection extends AbstractConnection implements Loc
     {
         return self::LOCALHOST;
     }
+
+    final public function setHost(string $host): void
+    {
+        if (strcasecmp($host, self::LOCALHOST) == 0) {
+            return;
+        }
+        throw new LocalHostnameException;
+    }
 }
