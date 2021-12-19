@@ -8,5 +8,7 @@ abstract class AbstractConnection implements ConnectionInterface
 
     abstract public function getHost(): string;
 
+    abstract public function getPrefix(): string;
+
     abstract public function setHost(string $host): void;
 }
