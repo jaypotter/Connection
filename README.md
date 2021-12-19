@@ -7,3 +7,19 @@ PHP 8 Connection Management
 [![CodeFactor](https://www.codefactor.io/repository/github/jaypotter/connection/badge)](https://www.codefactor.io/repository/github/jaypotter/connection)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9747de4443b5b232b324/maintainability)](https://codeclimate.com/github/jaypotter/Connection/maintainability)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jaypotter/Connection/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/jaypotter/Connection/?branch=main)
+
+## Potter\Connection
+
+- abstract public connect(): void;
+- abstract public getHost(): string;
+- abstract public getPrefix(): string;
+- abstract public setHost(string $host): void;
+
+### Potter\Connection\Local\AbstractLocalConnection
+
+- final public getHost(): string;
+- public function getPrefix(): string;
+- final public function setHost(string $host): void;
+
+### Potter\Connection\Remote\AbstractRemoteConnection
+- public function getPrefix(): string;
