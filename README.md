@@ -13,6 +13,7 @@ PHP 8 Connection Management
 -   abstract public connect(): void;
 -   abstract public getHost(): string;
 -   public getPrefix(): string;
+-   abstract public send(string $bytes): mixed;
 -   abstract public setHost(string $host): void;
 
 ### Potter\Connection\Local
