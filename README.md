@@ -10,16 +10,24 @@ PHP 8 Connection Management
 
 ## Potter\Connection
 
-- abstract public connect(): void;
-- abstract public getHost(): string;
-- abstract public getPrefix(): string;
-- abstract public setHost(string $host): void;
+-   abstract public connect(): void;
+-   abstract public getHost(): string;
+-   abstract public getPrefix(): string;
+-   abstract public setHost(string $host): void;
 
-### Potter\Connection\Local\AbstractLocalConnection
+### Potter\Connection\Local
 
-- final public getHost(): string;
-- public function getPrefix(): string;
-- final public function setHost(string $host): void;
+-   final public getHost(): string;
+-   public function getPrefix(): string;
+-   final public function setHost(string $host): void;
 
-### Potter\Connection\Remote\AbstractRemoteConnection
-- public function getPrefix(): string;
+### Potter\Connection\Remote
+-   final public function getHost(): string;
+-   final public function getPass(): string;
+-   final public function getPort(): int;
+-   public function getPrefix(): string;
+-   final public function getUser(): string;
+-   final public function setHost(string $host): void;
+-   final public function setPass(string $pass): void;
+-   final public function setPort(int $port): void;
+-   final public function setUser(string $user): void;
