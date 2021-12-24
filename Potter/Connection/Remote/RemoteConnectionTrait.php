@@ -5,18 +5,15 @@ namespace Potter\Connection\Remote;
 trait RemoteConnectionTrait
 {
     private string $host;
-
     private string $pass;
-
-    private int $port;
-    
+    private int    $port;
     private string $user;
 
     final public function getHost(): string
     {
         return $this->host;
     }
-
+    
     final public function getPass(): string
     {
         return $this->pass;
