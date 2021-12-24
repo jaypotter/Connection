@@ -8,9 +8,13 @@ interface RemoteConnectionInterface extends ConnectionInterface
 {
     public function getPass(): string;
 
+    public function getPort(): int;
+
     public function getUser(): string;
 
     public function setPass(string $pass): void;
+
+    public function setPort(int $port): void;
 
     public function setUser(string $user): void;
 }
