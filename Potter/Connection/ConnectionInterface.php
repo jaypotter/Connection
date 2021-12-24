@@ -10,5 +10,7 @@ interface ConnectionInterface
 
     public function getPrefix(): string;
 
+    public function send(string $bytes): mixed;
+
     public function setHost(string $host): void;
 }

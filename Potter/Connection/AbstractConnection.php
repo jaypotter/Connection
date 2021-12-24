@@ -15,5 +15,7 @@ abstract class AbstractConnection implements ConnectionInterface
         return self::PREFIX;
     }
 
+    abstract public function send(string $bytes): mixed;
+
     abstract public function setHost(string $host): void;
 }
