@@ -4,11 +4,16 @@ namespace Potter\Connection;
 
 abstract class AbstractConnection implements ConnectionInterface
 {
+    private const PREFIX = 'conn';
+
     abstract public function connect(): void;
 
     abstract public function getHost(): string;
 
-    abstract public function getPrefix(): string;
+    public function getPrefix(): string
+    {
+        return self::PREFIX;
+    }
 
     abstract public function setHost(string $host): void;
 }
