@@ -15,6 +15,6 @@
     },
     "require": {
         "php": ">=8.0",
-        "potter/throwable": ">=0.0.1"
+        "potter/throwable": ">=0.0.3"
     }
 }
