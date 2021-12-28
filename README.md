@@ -14,13 +14,11 @@ PHP 8 Connection Management
 -   abstract public getHost(): string;
 -   public getPrefix(): string;
 -   abstract public send(string $bytes): mixed;
--   abstract public setHost(string $host): void;
 
 ### Potter\Connection\Local
 
 -   final public getHost(): string;
 -   public function getPrefix(): string;
--   final public function setHost(string $host): void;
 
 ### Potter\Connection\Remote
 -   final public function getHost(): string;
@@ -28,7 +26,6 @@ PHP 8 Connection Management
 -   final public function getPort(): int;
 -   public function getPrefix(): string;
 -   final public function getUser(): string;
--   final public function setHost(string $host): void;
 -   final public function setPass(string $pass): void;
 -   final public function setPort(int $port): void;
 -   final public function setUser(string $user): void;

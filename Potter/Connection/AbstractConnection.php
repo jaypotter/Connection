@@ -16,6 +16,4 @@ abstract class AbstractConnection implements ConnectionInterface
     }
 
     abstract public function send(string $bytes): mixed;
-
-    abstract public function setHost(string $host): void;
 }

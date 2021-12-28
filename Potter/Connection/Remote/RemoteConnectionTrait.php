@@ -29,11 +29,6 @@ trait RemoteConnectionTrait
         return $this->user;
     }
 
-    final public function setHost(string $host): void
-    {
-        $this->host = $host;
-    }
-
     final public function setPass(string $pass): void
     {
         $this->pass = $pass;
