@@ -8,6 +8,11 @@ abstract class AbstractLocalConnection extends AbstractConnection implements Loc
 {
     private const PREFIX = 'local';
 
+    final public function getHost(): string
+    {
+        return self::LOCALHOST;
+    }
+    
     public function getPrefix(): string
     {
         return self::PREFIX;
