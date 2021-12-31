@@ -9,6 +9,4 @@ interface ConnectionInterface
     public function getHost(): string;
 
     public function getPrefix(): string;
-
-    public function send(string $bytes): mixed;
 }
