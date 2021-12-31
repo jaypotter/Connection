@@ -8,8 +8,14 @@ abstract class AbstractRemoteConnection extends AbstractConnection implements Re
 {
     private const PREFIX = 'remote';
 
+    abstract public function getPort(): int;
+
     public function getPrefix(): string
     {
         return self::PREFIX;
     }
+    
+    abstract public function setHost(string $host): void;
+
+    abstract public function setPort(int $port): void;
 }
