@@ -6,16 +6,9 @@ use Potter\Connection\AbstractConnection;
 
 abstract class AbstractRemoteConnection extends AbstractConnection implements RemoteConnectionInterface
 {
-    private const PREFIX = 'remote';
-
     abstract public function getPass(): string;
 
     abstract public function getPort(): int;
-
-    public function getPrefix(): string
-    {
-        return self::PREFIX;
-    }
 
     abstract public function getUser(): string;
     
