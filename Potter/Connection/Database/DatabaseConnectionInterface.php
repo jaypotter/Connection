@@ -3,11 +3,10 @@
 namespace Potter\Database\Connection;
 
 use Potter\{
-    Connection\ConnectionInterface,
-    Dimension\Parent\ParentDimensionInterface
+    Connection\ConnectionInterface
 };
 
-interface DatabaseConnectionInterface extends ConnectionInterface, ParentDimensionInterface
+interface DatabaseConnectionInterface extends ConnectionInterface
 {
 
 }
