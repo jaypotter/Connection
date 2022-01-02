@@ -2,9 +2,9 @@
 
 namespace Potter\Connection\Remote;
 
-use Potter\Connection\AbstractConnection;
+use Potter\Connection\Connection;
 
-abstract class AbstractRemoteConnection extends AbstractConnection implements RemoteConnectionInterface
+abstract class AbstractRemoteConnection extends Connection implements RemoteConnectionInterface
 {
     abstract public function getPass(): string;
 
