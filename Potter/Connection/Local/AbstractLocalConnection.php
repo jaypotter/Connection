@@ -2,9 +2,9 @@
 
 namespace Potter\Connection\Local;
 
-use Potter\Connection\AbstractConnection;
+use Potter\Connection\Connection;
 
-abstract class AbstractLocalConnection extends AbstractConnection implements LocalConnectionInterface
+abstract class AbstractLocalConnection extends Connection implements LocalConnectionInterface
 {
-    
+
 }
