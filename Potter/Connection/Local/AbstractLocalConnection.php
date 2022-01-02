@@ -6,5 +6,5 @@ use Potter\Connection\AbstractConnection;
 
 abstract class AbstractLocalConnection extends AbstractConnection implements LocalConnectionInterface
 {
-    use LocalConnectionTrait;
+    
 }
